@@ -83,13 +83,13 @@ def send_answer(message):
         bot.send_message(message.chat.id, text=f"Выберите интересующий вас прибор.", reply_markup=markup)
 
     elif status[message.from_user.id] == 4:
-        bot.send_message(message.chat.it, text='Программное обеспечение "Regula Document Reader SDK", OCR- W1 '
+        bot.send_message(message.chat.id, text='Программное обеспечение "Regula Document Reader SDK", OCR- W1 '
                                           '(Программное обеспечение для оптического распознавания символов: считывание '
                                           'информации из визуальной зоны документов (соответствующих и несоответствующих стандартам ICAO). '
                                           ' Cтоимость годовой лицензии 92 Евро, в т.ч. НДС-20%. Оплата в рублях по курсу ЦБ РФ на дату платежа.', )
 
     elif status[message.from_user.id] == 5:
-        bot.send_photo(message.chat.id, ' Программное обеспечение "Regula Document Reader SDK", OCR- W5 '
+        bot.send_message(message.chat.id, ' Программное обеспечение "Regula Document Reader SDK", OCR- W5 '
                                           '(Программное обеспечение для оптического распознавания символов:'
                                           'считывание информации из визуальной зоны документов (соответствующих и '
                                           'несоответствующих стандартам ICAO). Стоимость 5-ти летней  лицензии - 448 Евро, в т.ч. НДС-20%. Оплата в рублях по курсу ЦБ РФ на дату платежа.', )
